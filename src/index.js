@@ -7,7 +7,7 @@ import SignUp from './components/signup'
 import Profile from './components/profile'
 import Form from './components/form'
 import './styles.css'
-import { Provider, connect } from 'react-redux'
+import { Provider } from 'react-redux'
 import { createStore } from 'redux'
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 

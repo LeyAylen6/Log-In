@@ -1,8 +1,8 @@
 import React from 'react';
 import style from './profile.module.css'
-import imageOther from "./userDefault.png"
-import imageFemale from './userFemale.png'
-import imageMale from './userMale.png'
+import imageOther from "./../images/userDefault.png"
+import imageFemale from './../images/userFemale.jpeg'
+import imageMale from './../images/userMale.jpg'
 // los "p" de los datos se convierten en inputs cuando
 // el usuario quiere cambiar los datos
 
