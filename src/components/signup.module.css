@@ -1,0 +1,207 @@
+.container {
+    width: 380px;
+    height: 550px;
+    border-radius: 5%;
+    background: white;
+    box-shadow: 0 5px 40px rgb(92, 99, 105);
+    justify-content: space-around;
+}
+
+.form {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.containerInput {
+    position: relative;
+    height: 35px;
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.containerInputDate {
+    display: flex;
+    justify-content: space-around;
+    border: 1px rgb(148, 153, 157) solid;
+    width: 75%;
+    padding: 10px 0 6px 0;
+    border-radius: 7px;
+}
+
+.containerRadio {
+    display: flex;
+    width: 70%;
+    justify-content: space-between;
+}
+
+.input {
+    position: absolute;
+    border: 1px solid rgb(148, 153, 157);
+    border-radius: 7px;
+    width: 80%;
+    height: 100%;
+    outline: none;
+    background: none;
+    z-index: 1;
+    padding-left: 10px;
+}
+
+.inputDate {
+    border: none;
+}
+
+.redInput {
+    border: 2px solid red;
+}
+
+.greenInput {
+    border: 2px solid green;
+}
+
+.inputDate:focus-visible {
+    border: none;
+}
+
+.inputDate::-webkit-calendar-picker-indicator {
+    cursor: pointer;
+}
+
+.label {
+    position: absolute;
+    top: 10px;
+    left: 30px;
+    padding: 0 4px;
+    background-color: white;
+    color: rgb(148, 153, 157);
+    transition: 0.5s;
+    z-index: 0;
+}
+
+.labelDate {
+    color: rgb(148, 153, 157);
+    margin-left: -12px;
+}
+
+::placeholder {
+    color: transparent;
+}
+
+.iconPassword {
+    position: absolute;
+    display: flex;
+    align-self: flex-end;
+    margin-right: 30px;
+    cursor: pointer;
+    z-index: 10;
+}
+
+.forgotPassword {
+    font-size: 16px;
+    text-align: center;
+    cursor: pointer;
+    color: black;
+    margin-top: -20px;
+}
+
+.forgotPassword:hover {
+    color:rgb(17, 87, 167)
+}
+
+.submitButton {
+    width: 90px;
+    height: 33px;
+    border-radius: 7px;
+    border: none;
+    background-color: purple;
+    color: white;
+    cursor: pointer;
+    padding: 6px 21px;
+    display: flex;
+    align-self: flex-end;
+    margin-right: 45px;
+    margin-bottom: 10px;
+}
+
+.horizontalLine {
+   width: 75%;
+}
+
+.submitButton:hover {
+    background-color:#9867C5;
+}
+
+.input:focus + .label {  
+    border-color: purple;
+    color: purple; 
+    top: -7px;
+    left: 24px;
+    z-index: 10;
+    font-size: 14px;
+    font-weight: 550;   
+}
+
+.input:focus {
+    border: 2px solid purple;
+}
+
+.icon{
+    display: none;
+}
+
+.containerInput > input:not(:placeholder-shown) + .icon {
+    display: block;
+}
+
+.input:not(:placeholder-shown) + .label {
+    color: purple; 
+    top: -7px;
+    left: 24px;
+    z-index: 10;
+    font-size: 14px;
+    font-weight: 550;
+}
+
+input[type='radio']:after {
+    width: 13px;
+    height: 13px;
+    border-radius: 15px;
+    top: -2px;
+    left: -2px;
+    position: relative;
+    background-color: #d1d3d1;
+    content: '';
+    display: inline-block;
+    visibility: visible;
+    border: 2px solid white;
+    cursor: pointer;
+}
+
+input[type='radio']:checked:after {
+    width: 13px;
+    height: 13px;
+    border-radius: 15px;
+    top: -2px;
+    left: -2px;
+    position: relative;
+    background-color: purple;
+    content: '';
+    display: inline-block;
+    visibility: visible;
+    border: 2px solid white;
+    cursor: pointer;
+}
+
+@media only screen and (max-width:320px){
+    .container{
+        width: 80%;
+        height: auto;
+        margin: 0px;
+    }
+}

@@ -1,0 +1,35 @@
+* {
+    font-size: 17px;
+}
+
+#root {
+    width: 100vw;
+    height: 100vh;
+    display: Flex;
+    justify-content: center;
+    align-items: center;
+}
+
+body {
+    background-color:  rgba(204, 195, 195, 0.484);
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+h1 {
+    height: 5%;
+    width: 100%;
+    font-size: 50px;
+    display: flex;
+    justify-content: center;
+}
+
+a:link, a:visited, a:active {
+    text-decoration:none;
+}
